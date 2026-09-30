@@ -2,10 +2,12 @@
 
 def calcular_media(nota1, nota2):
     return (nota1 + nota2) / 2
-
-print("\033[36;40m=\033[m" * 40)
+def mostrar_linha():
+    print("\033[36;40m=\033[m" * 40)
+    
+mostrar_linha()
 print("       \033[36mSistema de Notas do Aluno\033[m")
-print("\033[36;40m=\033[m" * 40)
+mostrar_linha()
 
 n1 = float(input("Digite a primeira nota: "))
 n2 = float(input("Digite a segunda nota: "))
